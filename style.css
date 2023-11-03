@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+:root{
+    --mypink:rgb(51,73,93);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(51,73,93);
+}
+header{
+    height:8vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgb(51,73,93);
+    column-gap: 480px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    
+}
+
+
+
+ul{
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 3px;
+    height: fit-content;
+    margin-left: 10px;   
+}
+.navbar-item{
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: rgb(255, 255, 255);
+}
+.navbar-item:hover{
+    background-color:#ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(51,73,93);
+}
+header input{
+    border-radius: 24px;
+    width: 194px;
+    padding: 5px;
+    height: 25px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-weight: bold;
+
+}
+.middle-part{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.middle-part h1{
+    font-size: 39px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: white;
+}
+.mybut{
+    display: flex;
+    flex-direction: row;
+    column-gap: 23px;
+}
+.mybut button{
+    padding: 7px;
+    padding-bottom: 3px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mybut button:nth-child(1){
+    background-color: rgb(12,190,52);
+    box-shadow: 1px 2px 7px 4px rgb(12,190,52);
+    
+}
+.mybut button:nth-child(1):hover{
+    box-shadow: 1px 2px 13px 4px rgb(12,190,52);
+}
+
+
+.mybut button:nth-child(2){
+    background-color: rgb(121,68,75);
+    box-shadow: 1px 2px 7px 4px rgb(121,68,75);
+}
+.mybut button:nth-child(2):hover{
+    box-shadow: 1px 2px 13px 4px rgb(121,68,75);
+
+}
+.mybut button:nth-child(3){
+    background-color: rgb(234,189,20);
+    box-shadow: 1px 2px 7px 4px rgb(234,189,20);
+}
+.mybut button:nth-child(3):hover{
+    box-shadow: 1px 2px 13px 4px rgb(234,189,20);
+
+}
+.mybut button:nth-child(4){
+    background-color: rgb(50,151,213);
+    box-shadow: 1px 2px 7px 4px rgb(50,151,213);
+}
+.mybut button:nth-child(4):hover{
+    box-shadow: 1px 2px 13px 4px rgb(50,151,213);
+
+}
+.mybut button:nth-child(5){
+    background-color: rgb(205, 205, 205);
+    box-shadow: 1px 2px 7px 4px rgb(227, 227, 227);
+}
+.mybut button:nth-child(5):hover{
+    box-shadow: 1px 2px 13px 4px rgb(209, 211, 213);
+
+}
+.popup{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+    height: 60px;
+}
+.popbox{
+    width: fit-content;
+    margin-right: 44px;
+    width: 22vw;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1.2s;
+    position: relative;
+    right: 10px;
+    visibility: hidden;
+
+}
+.popbox img:nth-child(1){
+    height: 40px;
+    cursor: pointer;
+}
+.cross{
+    height: 20px;
+    cursor: pointer;
+}
+.cross:hover{
+    filter: grayscale(1);
+}
+.popbox::after{
+    content: "";
+    position: absolute;
+    background-color: green;
+    width: 35px;
+    height: 5px;
+    top: 57px;
+    left: 1px;
+    animation: line 1.3s ease-in 1;
+}
+@keyframes line{
+    0%{
+        width: 15px;
+    }
+    10%{
+        width: 33px;
+    }
+    20%{
+        width: 43px;
+    }
+    30%{
+        width: 63px;
+    }
+    40%{
+        width: 83px;
+    }
+    50%{
+        width: 100px;
+    }
+    70%{
+        width: 200px;
+    }
+    90%{
+        width: 250px;
+    }
+    100%{
+        width: 300px;
+    }
+}
